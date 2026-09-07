@@ -30,7 +30,7 @@ El proyecto incluye un uso riguroso y semántico de los siguientes grupos de eti
 - `<article>`: Bloques independientes de contenido dentro de las secciones.
 - `<footer>`: Pie de página con derechos reservados, nota de accesibilidad y enlace directo a descarga del CV.
 
-### Etiquetas de Interactividad y Medición Nativa (Reto Adicional ⭐️)
+### Etiquetas de Interactividad y Medición Nativa
 - `<picture>` y `<source>`: Carga adaptativa de imágenes responsive según el tamaño de pantalla.
 - `<details>` y `<summary>`: Bloques colapsables interactivos para desplegar información adicional sin recargar.
 - `<dialog>`: Ventana emergente (modal) nativa HTML5 para la ficha rápida de contacto.
@@ -108,20 +108,7 @@ El proyecto incluye un uso riguroso y semántico de los siguientes grupos de eti
 
 ---
 
-## 5. Resumen del Reto Adicional
-
-El proyecto incluye los presentes retos sobresaliente:
-1. Elemento `<picture>` para imágenes responsive.
-2. Elementos `<details>` y `<summary>` para información desplegable.
-3. Elemento `<dialog>` para modal interactivo de contacto rápido.
-4. Elemento `<progress>` para progreso profesional y académico.
-5. Elemento `<meter>` para niveles de dominio en habilidades e idiomas.
-6. Navegación interna mejorada mediante `<nav>` con saltos "Volver arriba".
-7. Enlace de descarga del CV en formato PDF (`assets/documents/CV_Antonio_Vargas.pdf`).
-
----
-
-## 6. Estructura de Archivos del Proyecto
+## 5. Estructura de Archivos del Proyecto
 
 ```text
 web00/
