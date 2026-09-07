@@ -3,7 +3,7 @@
 ## Información General
 
 - **Nombre del estudiante:** Ing. Antonio Alexander Vargas Sosa
-- **Carrera:** Ingeniería de Sistemas e Ingeniería Mecatrónica
+- **Carrera:** Ingeniería de Sistemas
 - **Materia:** Tecnologías Web I [SIS-214]
 - **Institución:** Universidad Católica Boliviana "San Pablo" (UCB)
 
