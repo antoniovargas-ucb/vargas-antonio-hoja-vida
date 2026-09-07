@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formación académica de Ing. Antonio Alexander Vargas Sosa - Ingeniería de Sistemas e Ingeniería Mecatrónica en UCB.">
+    <meta name="author" content="Ing. Antonio Alexander Vargas Sosa">
+    <title>Formación Académica - Ing. Antonio Alexander Vargas Sosa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Toggle de Tema (Claro / Oscuro) en CSS puro -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" hidden>
+
+    <!-- Enlace de accesibilidad A11y -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado Superior con Nombre Extendido, Lema y Control de Tema -->
+    <header class="top-brand-header" role="banner">
+        <div class="top-brand-container">
+            <div class="brand-extended">
+                <span class="brand-logo">⚡</span>
+                <div class="brand-info">
+                    <span class="brand-name">Ing. Antonio Alexander <span class="gradient-text">Vargas
+                            Sosa</span></span>
+                    <span class="brand-slogan">"Los límites están hechos para romperse"</span>
+                </div>
+            </div>
+            <div class="header-controls">
+                <label for="theme-toggle" class="theme-toggle-btn" title="Alternar Modo Oscuro / Claro"
+                    aria-label="Cambiar tema">
+                    <span class="icon-dark">🌙</span>
+                    <span class="icon-light">☀️</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Lateral / Barra de Filtro Flotante -->
+    <aside class="right-sidebar-aside" aria-label="Navegación lateral y filtro de secciones">
+        <div class="filter-bar">
+            <h4 class="filter-title">🔍 Navegación</h4>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="formacion.html" class="active" aria-current="page">Formación</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="idiomas.html">Idiomas</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Encabezado de Sección -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Formación <span class="gradient-text">Académica</span></h1>
+                <p class="hero-subtitle">Trayectoria universitaria, títulos y competencias especializadas</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main id="contenido-principal">
+        <!-- Formación académica -->
+        <section id="formacion" aria-labelledby="formacion-heading">
+            <h2 id="formacion-heading">Formación académica</h2>
+
+            <article>
+                <h3>Ingeniería de Sistemas</h3>
+                <p><strong>Institución:</strong> Universidad Católica Boliviana "San Pablo" (UCB)</p>
+                <p><strong>Grado obtenido:</strong> Licenciatura</p>
+                <p><strong>Periodo:</strong> <time datetime="2025">2025</time> - <time datetime="2029">2029</time></p>
+
+                <!-- <details> y <summary> para desplegar contenido adicional -->
+                <details class="details-formacion">
+                    <summary>Ver asignaturas destacadas y competencias académicas</summary>
+                    <ul class="lista-asignaturas-destacadas">
+                        <li><strong>Programación I</strong> (Uso competitivo de C++)</li>
+                        <li><strong>Ingeniería de Datos</strong> (Innovación en el manejo preciso de la información recolectada)</li>
+                        <li><strong>Internet de las Cosas</strong> (Innovación en la implementación de la IoT con Mecatrónica)</li>
+                    </ul>
+                </details>
+            </article>
+
+            <article>
+                <h3>Ingeniería Mecatrónica</h3>
+                <p><strong>Institución:</strong> Universidad Católica Boliviana "San Pablo" (UCB)</p>
+                <p><strong>Grado obtenido:</strong> Licenciatura</p>
+                <p><strong>Periodo:</strong> <time datetime="2029">2029</time> - <time datetime="2032">2032</time></p>
+
+                <!-- <details> y <summary> para desplegar contenido adicional -->
+                <details class="details-formacion">
+                    <summary>Ver asignaturas destacadas y competencias técnicas mecatrónicas</summary>
+                    <ul class="lista-asignaturas-destacadas">
+                        <li><strong>Circuitos Electrónicos I</strong> (Ahorro de la energía de potencia ofrecida por la fuente)</li>
+                        <li><strong>Máquinas</strong> (Innovación con la fuerza ofrecida por la máquina)</li>
+                        <li><strong>Automatización</strong> (Control inteligente de actuadores, programación embebida avanzada en C++/MicroPython con ESP32 y telemetría en tiempo real)</li>
+                    </ul>
+                </details>
+            </article>
+
+            <article>
+                <h3>Educación Secundaria</h3>
+                <p><strong>Institución:</strong> Colegio San Calixto</p>
+                <p><strong>Grado obtenido:</strong> Diploma de Bachiller en Humanidades</p>
+                <p><strong>Periodo:</strong> <time datetime="2010">2010</time> - <time datetime="2021">2021</time></p>
+            </article>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA NATIVO Y LIMPIO -->
+    <footer id="pie-pagina" role="contentinfo">
+        <p><small>&copy; 2026 Ing. Antonio Alexander Vargas Sosa - Todos los derechos reservados.</small></p>
+        <p><small>Desarrollado con maquetación HTML5 semántica y CSS3 modular sin dependencias externas.</small></p>
+        <p><small>Fecha de última actualización: <time datetime="2026-09-07">7 de Septiembre de 2026</time></small></p>
+        <p>
+            <a href="assets/documents/CV_Antonio_Vargas.pdf" download="CV_Antonio_Vargas.pdf">Descargar CV en PDF</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

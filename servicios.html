@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de docencia particular, tutorías universitarias y secundarias de Ing. Antonio Alexander Vargas Sosa.">
+    <meta name="author" content="Ing. Antonio Alexander Vargas Sosa">
+    <title>Servicios de Docencia - Ing. Antonio Alexander Vargas Sosa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Toggle de Tema (Claro / Oscuro) en CSS puro -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" hidden>
+
+    <!-- Enlace de accesibilidad A11y -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado Superior con Nombre Extendido, Lema y Control de Tema -->
+    <header class="top-brand-header" role="banner">
+        <div class="top-brand-container">
+            <div class="brand-extended">
+                <span class="brand-logo">⚡</span>
+                <div class="brand-info">
+                    <span class="brand-name">Ing. Antonio Alexander <span class="gradient-text">Vargas Sosa</span></span>
+                    <span class="brand-slogan">"Los límites están hechos para romperse"</span>
+                </div>
+            </div>
+            <div class="header-controls">
+                <label for="theme-toggle" class="theme-toggle-btn" title="Alternar Modo Oscuro / Claro" aria-label="Cambiar tema">
+                    <span class="icon-dark">🌙</span>
+                    <span class="icon-light">☀️</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Lateral / Barra de Filtro Flotante -->
+    <aside class="right-sidebar-aside" aria-label="Navegación lateral y filtro de secciones">
+        <div class="filter-bar">
+            <h4 class="filter-title">🔍 Navegación</h4>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="idiomas.html">Idiomas</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="servicios.html" class="active" aria-current="page">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Encabezado de Sección -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Servicio de <span class="gradient-text">Docencia</span></h1>
+                <p class="hero-subtitle">Modalidades, tarifas competitivas por hora y metodología de aprendizaje</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main id="contenido-principal">
+        <!-- Servicio de docencia -->
+        <section id="servicios" aria-labelledby="servicios-heading">
+            <h2 id="servicios-heading">Servicio de docencia</h2>
+            <p class="contenido-desplazado" style="font-weight: 600; color: var(--text-bright); margin-bottom: 1rem; border-left: none; padding-left: 0;">
+                Tarifas y modalidades del servicio de docencia universitaria y secundaria
+            </p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Precio/hora</th>
+                        <th scope="col">Registro de Apuntes</th>
+                        <th scope="col">Diagnóstico</th>
+                        <th scope="col">Micropruebas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Virtual</th>
+                        <td><em>35</em> Bs.</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Universidad</th>
+                        <td><em>53</em> Bs.</td>
+                        <td>No</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Domicilio</th>
+                        <td><em>70</em> Bs.</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <!-- <details> y <summary> para desplegar contenido adicional -->
+            <details>
+                <summary>Ver política de clases, requisitos y garantía de aprendizaje</summary>
+                <p>
+                    Las clases incluyen material digital en formato PDF, soporte asincrónico por correo institucional y simulacros de exámen adaptativos.
+                </p>
+            </details>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA NATIVO Y LIMPIO -->
+    <footer id="pie-pagina" role="contentinfo">
+        <p><small>&copy; 2026 Ing. Antonio Alexander Vargas Sosa - Todos los derechos reservados.</small></p>
+        <p><small>Desarrollado con maquetación HTML5 semántica y CSS3 modular sin dependencias externas.</small></p>
+        <p><small>Fecha de última actualización: <time datetime="2026-09-07">7 de Septiembre de 2026</time></small></p>
+        <p>
+            <a href="assets/documents/CV_Antonio_Vargas.pdf" download="CV_Antonio_Vargas.pdf">Descargar CV en PDF</a>
+        </p>
+    </footer>
+
+</body>
+</html>

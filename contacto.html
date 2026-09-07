@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulario de contacto profesional y contratación de Ing. Antonio Alexander Vargas Sosa.">
+    <meta name="author" content="Ing. Antonio Alexander Vargas Sosa">
+    <title>Contacto Profesional - Ing. Antonio Alexander Vargas Sosa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Toggle de Tema (Claro / Oscuro) en CSS puro -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle-input" hidden>
+
+    <!-- Enlace de accesibilidad A11y -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Encabezado Superior con Nombre Extendido, Lema y Control de Tema -->
+    <header class="top-brand-header" role="banner">
+        <div class="top-brand-container">
+            <div class="brand-extended">
+                <span class="brand-logo">⚡</span>
+                <div class="brand-info">
+                    <span class="brand-name">Ing. Antonio Alexander <span class="gradient-text">Vargas
+                            Sosa</span></span>
+                    <span class="brand-slogan">"Los límites están hechos para romperse"</span>
+                </div>
+            </div>
+            <div class="header-controls">
+                <label for="theme-toggle" class="theme-toggle-btn" title="Alternar Modo Oscuro / Claro"
+                    aria-label="Cambiar tema">
+                    <span class="icon-dark">🌙</span>
+                    <span class="icon-light">☀️</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú Lateral / Barra de Filtro Flotante -->
+    <aside class="right-sidebar-aside" aria-label="Navegación lateral y filtro de secciones">
+        <div class="filter-bar">
+            <h4 class="filter-title">🔍 Navegación</h4>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="idiomas.html">Idiomas</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Encabezado de Sección -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contacto <span class="gradient-text">Profesional</span></h1>
+                <p class="hero-subtitle">Consultoría, propuestas laborales, docencia y colaboraciones</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main id="contenido-principal">
+        <!-- Contacto con validaciones nativas, fieldset/legend y datalist -->
+        <section id="contacto" aria-labelledby="contacto-heading">
+            <h2 id="contacto-heading">Contacto profesional</h2>
+
+            <!-- Sugerencias dinámicas nativas de autocompletado mediante <datalist> -->
+            <datalist id="ciudades-lista">
+                <option value="La Paz, Bolivia"></option>
+                <option value="El Alto, Bolivia"></option>
+                <option value="Cochabamba, Bolivia"></option>
+                <option value="Santa Cruz, Bolivia"></option>
+            </datalist>
+
+            <datalist id="materias-lista">
+                <option value="Programación y Desarrollo Web"></option>
+                <option value="Física Universitaria"></option>
+                <option value="Cálculo e Integrales"></option>
+                <option value="Automatización y Mecatrónica"></option>
+            </datalist>
+
+            <form id="registro" action="#" method="post">
+                <fieldset class="contenido-desplazado">
+                    <legend>Información personal del remitente</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100"
+                            placeholder="Ej. Juan Pérez" aria-describedby="nombre-ayuda" autocomplete="name">
+                        <br><small id="nombre-ayuda">Ingrese su nombre y apellidos (mínimo 3 caracteres).</small>
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com"
+                            aria-describedby="correo-ayuda" autocomplete="email">
+                        <br><small id="correo-ayuda">Formato obligatorio: usuario@dominio.com</small>
+                    </p>
+                    <p>
+                        <label for="telefono">Número telefónico:</label><br>
+                        <input type="tel" id="telefono" name="telefono" required pattern="^\+?[0-9\s\-]{7,15}$"
+                            placeholder="+591 70000000" aria-describedby="telefono-ayuda" autocomplete="tel">
+                        <br><small id="telefono-ayuda">Formato: número de 7 a 15 dígitos con código de país
+                            opcional.</small>
+                    </p>
+                    <p>
+                        <label for="ciudad">Ciudad de origen / Ubicación:</label><br>
+                        <input type="text" id="ciudad" name="ciudad" list="ciudades-lista"
+                            placeholder="Escriba o seleccione su ciudad">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="contenido-desplazado">
+                    <legend>Detalles de la solicitud o contratación</legend>
+                    <p>
+                        <label for="motivo">Motivo de contacto:</label><br>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">-- Seleccione una opción --</option>
+                            <optgroup label="Oportunidades Laborales">
+                                <option value="laboral">Propuesta laboral (Tiempo completo)</option>
+                                <option value="consultoria">Consultoría mecatrónica / sistemas</option>
+                            </optgroup>
+                            <optgroup label="Servicios Académicos">
+                                <option value="docencia">Servicio de docencia / tutoría</option>
+                                <option value="investigacion">Colaboración en investigación</option>
+                            </optgroup>
+                            <optgroup label="Otros">
+                                <option value="otro">Otro motivo general</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="materia-interes">Asignatura o tema de interés:</label><br>
+                        <input type="text" id="materia-interes" name="materia-interes" list="materias-lista"
+                            placeholder="Ej. Programación y Desarrollo Web">
+                    </p>
+                    <p>
+                        <label for="fecha-contacto">Fecha estimada para la primera sesión / reunión:</label><br>
+                        <input type="date" id="fecha-contacto" name="fecha-contacto">
+                    </p>
+                    <p>
+                        <label for="urgencia">Nivel de prioridad / urgencia (1: Baja, 5: Inmediata):</label><br>
+                        <input type="range" id="urgencia" name="urgencia" min="1" max="5" value="3">
+                    </p>
+                    <p>
+                        <label for="mensaje">Mensaje o detalle de la consulta:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="50" required minlength="10" maxlength="500"
+                            placeholder="Escriba su consulta o mensaje detallado aquí..."></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                        <label for="aceptacion">Acepto los términos de contacto y la política de privacidad y
+                            tratamiento de datos personales.</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <p class="contenido-desplazado">
+                    <button type="submit">Enviar formulario de contacto</button>
+                    <button type="reset">Limpiar campos del formulario</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Cita destacada con <blockquote> y <cite> -->
+        <section aria-label="Cita inspiradora">
+            <blockquote>
+                <p>"Los límites están hechos para romperse"</p>
+                <footer>- <cite>Ing. Antonio Alexander Vargas Sosa</cite></footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- PIE DE PÁGINA NATIVO Y LIMPIO -->
+    <footer id="pie-pagina" role="contentinfo">
+        <p><small>&copy; 2026 Ing. Antonio Alexander Vargas Sosa - Todos los derechos reservados.</small></p>
+        <p><small>Desarrollado con maquetación HTML5 semántica y CSS3 modular sin dependencias externas.</small></p>
+        <p><small>Fecha de última actualización: <time datetime="2026-09-07">7 de Septiembre de 2026</time></small></p>
+        <p>
+            <a href="assets/documents/CV_Antonio_Vargas.pdf" download="CV_Antonio_Vargas.pdf">Descargar CV en PDF</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
